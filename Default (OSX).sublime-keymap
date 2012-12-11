@@ -1,0 +1,27 @@
+[
+  { "keys": ["super+shift+r"], "command": "reveal_in_side_bar" },
+  // 4-column layout isn't too useful for me, so instead override
+  // Cmd+Option+4 to make an asymmetric 1-col, 2-row layout
+  {
+    "keys": ["super+alt+4"], "command": "set_layout",
+    "args": {
+      "cols": [0.0, 0.5, 1.0],
+      "rows": [0.0, 0.5, 1.0],
+      "cells": [
+        [0, 0, 1, 2],
+        [1, 0, 2, 1],
+        [1, 1, 2, 2]
+      ]
+    }
+  },
+  // Move files to other panes in the layout
+  { "keys": ["alt+tab", "left"], "command": "move_to_group",
+    "args": { "group": 0 }
+  },
+  { "keys": ["alt+tab", "right"], "command": "move_to_group",
+    "args": { "group": 1 }
+  },
+  { "keys": ["alt+tab", "down"], "command": "move_to_group",
+    "args": { "group": 2 }
+  }
+]
