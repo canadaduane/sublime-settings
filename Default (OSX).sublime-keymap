@@ -23,5 +23,17 @@
   },
   { "keys": ["alt+tab", "down"], "command": "move_to_group",
     "args": { "group": 2 }
+  },
+  // When text is selected, allow "escape" key to deselect, e.g.
+  // after command-a to select all text, escape should deselect.
+  { "keys": ["escape"], "command": "soft_undo",
+    "context": [
+      { 
+        "key": "selection_empty", 
+        "operator": "equal", 
+        "operand": false, 
+        "match_all": true 
+      }
+    ]
   }
 ]
