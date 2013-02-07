@@ -4,6 +4,7 @@
 	[
 		"CTags",
 		"Git",
+		"GitGutter",
 		"Package Control"
 	],
 	"repositories":
