@@ -7,6 +7,7 @@ My Sublime Text 2 Settings and Keymaps
 - Reveal-in-side-bar with Textmate-like key combo [Command+Shift+R]
 - Insert current date [Ctrl+D] or datetime [Ctrl+D Ctrl+D]
 - Toggle Line Numbers in the gutter [Command+K Command+N]
+- After selecting text, allow ESC to deselect and return cursor to previous position
 
 Theme
 
